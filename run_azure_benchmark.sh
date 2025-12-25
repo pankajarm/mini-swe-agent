@@ -118,8 +118,10 @@ echo "  Output:      $OUTPUT_DIR"
 echo "  Config:      $TEMP_CONFIG"
 echo ""
 
-# Save config copy
-cp "$TEMP_CONFIG" "$OUTPUT_DIR/config.yaml"
+# Save config copy (only if different)
+if [ "$TEMP_CONFIG" != "$OUTPUT_DIR/config.yaml" ]; then
+    cp "$TEMP_CONFIG" "$OUTPUT_DIR/config.yaml"
+fi
 
 # Run benchmark
 echo -e "${BLUE}Starting benchmark...${NC}"
