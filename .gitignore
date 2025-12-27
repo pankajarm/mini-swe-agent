@@ -185,3 +185,4 @@ pyrightconfig.json
 
 # Benchmark outputs
 outputs/
+logs/
