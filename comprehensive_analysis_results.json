@@ -1,0 +1,38 @@
+{
+  "mini_stats": {
+    "total_predictions": 500,
+    "submitted": 137,
+    "submit_rate": 74.05405405405405,
+    "trajectory_patterns": {
+      "total_commands": 0,
+      "has_reproduction": 0,
+      "has_editing": 0,
+      "has_testing": 0,
+      "sed_count": 0,
+      "python_count": 0,
+      "analyzed": 10
+    }
+  },
+  "gepa_stats": {
+    "total_predictions": 355,
+    "submitted": 0,
+    "submit_rate": 0,
+    "trajectory_patterns": {
+      "analyzed": 0
+    }
+  },
+  "recommendations": {
+    "core_loop": "Use mini-swe-agent's simple, proven loop structure",
+    "error_handling": "Combine mini's strict format checking with gepa's reflection on execution errors only",
+    "workflow_enforcement": [
+      "Require reproduction script creation (mini's strength - 0% do this)",
+      "Test after every edit (mini's strength - 0% do this)",
+      "Add reflection prompts only on execution errors (gepa's strength)"
+    ],
+    "prompting": "Use mini's clear, direct prompt with gepa's tool creation guidance for complex cases",
+    "limits": {
+      "cost": "$3.00 (mini's conservative approach)",
+      "steps": "250 (gepa's safety limit)"
+    }
+  }
+}

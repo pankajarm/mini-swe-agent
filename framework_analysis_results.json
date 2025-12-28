@@ -1,0 +1,59 @@
+{
+  "mini_stats": {
+    "total_instances": 500,
+    "submitted": 0,
+    "submit_rate": 0.0,
+    "predictions_analyzed": 0,
+    "edit_patterns": {}
+  },
+  "gepa_stats": {
+    "total_instances": 355,
+    "submitted": 0,
+    "submit_rate": 0.0,
+    "predictions_analyzed": 0,
+    "edit_patterns": {}
+  },
+  "comparison": {
+    "mini_total": 500,
+    "gepa_total": 355,
+    "common": 355,
+    "mini_solved": 0,
+    "gepa_solved": 0,
+    "both_solved": 0,
+    "mini_only": [],
+    "gepa_only": []
+  },
+  "strengths": {
+    "mini_swe_agent": [],
+    "gepa_swe_agent": []
+  },
+  "recommendations": {
+    "core_architecture": {
+      "use": "mini-swe-agent's simple loop",
+      "reason": "Proven simplicity and effectiveness"
+    },
+    "error_handling": {
+      "use": "mini's strict format checking + gepa's reflection on execution errors",
+      "reason": "Balance between strictness and helpful recovery"
+    },
+    "workflow": {
+      "steps": [
+        "1. Require reproduction script creation (mini strength)",
+        "2. Test after every edit (mini strength)",
+        "3. Add reflection prompts only on execution errors (gepa strength)",
+        "4. Use first-block fallback very sparingly (gepa feature)"
+      ]
+    },
+    "prompting": {
+      "base": "mini's clear, direct prompt structure",
+      "additions": [
+        "gepa's tool creation guidance for complex cases",
+        "Emphasize testing workflow from mini"
+      ]
+    },
+    "limits": {
+      "cost": "$3.00 (mini's conservative approach)",
+      "steps": "250 (gepa's safety limit)"
+    }
+  }
+}
