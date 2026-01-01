@@ -186,3 +186,9 @@ pyrightconfig.json
 # Benchmark outputs
 outputs/
 logs/
+
+# Large artifacts for HuggingFace datasets
+outputs/
+logs/
+preds.json
+*.log
